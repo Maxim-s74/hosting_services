@@ -1,0 +1,73 @@
+:root {
+    --fs-init: 12px;
+    --sec1-fs: 1vw;
+    --sec2-fs: 1vw;
+    --sec3-fs: 1vw;
+//    --fs-init: 1vw;
+//    --sec1-fs: 1vw;
+//    --sec2-fs: 1vw;
+//    --sec3-fs: 1vw;
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+
+    :root {
+        --fs-init: 12px;
+        --sec1-fs: 2vw;
+        --sec2-fs: 1vw;
+        --sec3-fs: 2vw;
+//        --fs-init: 1vw;
+//        --sec1-fs: 2vw;
+//        --sec2-fs: 1.5vw;
+//        --sec3-fs: 2vw;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 650px) {
+
+    :root {
+        --fs-init: 12px;
+        --sec1-fs: 2vw;
+        --sec2-fs: 1vw;
+        --sec3-fs: 2.5vw;
+//        --fs-init: 1vw;
+//        --sec1-fs: 2vw;
+//        --sec2-fs: 1.5vw;
+//        --sec3-fs: 2.5vw;
+    }
+}
+
+@media (max-width: 650px) and (min-width: 500px) {
+
+    :root {
+        --fs-init: 12px;
+        --sec1-fs: 2vw;
+        --sec2-fs: 3vw;
+        --sec3-fs: 2.5vw;
+//        --fs-init: 1vw;
+//        --sec1_fs: 2vw;
+//        --sec2-fs: 3vw;
+//        --sec3-fs: 2.5vw;
+    }
+}
+
+@media (max-width: 500px) {
+
+    :root {
+        --fs-init: 12px;
+        --sec1-fs: 4vw;
+        --sec2-fs: 3vw;
+        --sec3-fs: 2.5vw;
+//        --fs-init: 1vw;
+//        --sec1-fs: 4vw;
+//        --sec2-fs: 3vw;
+//        --sec3-fs: 2.5vw;
+    }
+}
+
+.fonts-variables {
+    @fs: var(--fs-init);
+    @s1fs: var(--sec1-fs);
+    @s2fs: var(--sec2-fs);
+    @s3fs: var(--sec3-fs);
+}

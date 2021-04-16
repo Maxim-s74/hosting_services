@@ -1,0 +1,82 @@
+@import "variables.less";
+
+.statistics {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrap_stage {
+    width: 18.5vw;
+    height: 12vw;
+    position: relative;
+    flex-basis: 24%;
+}
+
+.wrap_stage::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.stage {
+    font-size: @s1fs;
+}
+
+//======================================
+.charts_wrapper {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.chart_block {
+    .fonts-variables;
+    width: 25vw;
+    height: 22.5vw;
+    font-size: @s2fs;
+    position: relative;
+    flex-basis: 32.33%;
+}
+
+.chart_block::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+//======================================
+.choice_wrap {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.choice_block {
+    .fonts-variables;
+    width: 37vw;
+    height: 24.5vw;
+    font-size: @s3fs;
+    position: relative;
+    flex-basis: 49%;
+}
+
+.choice_block::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+//======================================
+.wrap_inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

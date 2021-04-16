@@ -1,0 +1,50 @@
+@hr_clr: #b8b4b4;
+
+footer {
+    height: 5.3rem;
+    border-top: 1px solid @hr_clr;
+    margin: 0 -1vw;
+    flex: 0 0 auto;
+
+    .ftr_content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 2vw;
+
+        .list {
+            display: flex;
+            text-transform: uppercase;
+
+            li {
+                margin: 0 1rem;
+                a {
+                    color: black;
+                }
+            }
+        }
+
+        #about {
+            &:hover {}
+
+            &.ftr_pnt {}
+        }
+
+        #blog {
+            &:hover {}
+
+            &.ftr_pnt {}
+        }
+
+        #licenses {
+            &:hover {}
+
+            &.ftr_pnt {}
+        }
+
+        .corporation {}
+
+        .copyright {}
+    }
+}

@@ -1,0 +1,166 @@
+@import "variables.less";
+@base: #f6f6f6;
+@menuw: 180px;
+@mfs: 16px;
+@ph: 1.2*@mfs;
+@select: #c32056;
+@f_color: #808080;
+
+.wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.user_card {
+    width: 29%;
+}
+
+.user_form {
+    width: 70%;
+}
+
+.user_card {
+    text-align: center;
+
+    .photo {}
+
+    .user_info {
+
+        background-color: #f5f5f5;
+    }
+
+    .spec {}
+
+    .user_name {}
+
+    .card_content {}
+}
+
+@inblockw: 95%;
+
+.user_form {
+    .form_head {
+        background-color: #bd194b;
+        line-height: 1.5em;
+        color: white;
+        padding: .5em 1em;
+        width: @inblockw;
+        margin: 0 auto;
+
+        p {}
+    }
+
+    .questionnaire {
+        background-color: #f5f5f5;
+        line-height: 1em;
+        padding: 0 2.5%;
+
+        //КНОПКА
+        .button {
+            text-align: right;
+
+            input {
+                background-color: #bd194b;
+                color: white;
+                padding: .5em 1em;
+                margin: 1em 0;
+                right: 0;
+            }
+        }
+
+    }
+
+    .string {
+        display: flex;
+        width: 100%;
+        font-size: 12px;
+        margin: .5em auto;
+        justify-content: space-between;
+
+        .triple {
+            width: 32%;
+        }
+
+        .double {
+            width: 49%;
+        }
+
+        .single {
+            width: 100%;
+        }
+
+        div {
+
+            p {
+                color: #808080;
+                width: 100%;
+                margin: 1em 0;
+
+            }
+
+            input {
+                background-color: #f5f5f5;
+                border-bottom: 1px solid #808080;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        p {}
+
+        input {}
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+
+    .fonts-variables;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .user_card {
+        width: 100%;
+    }
+
+    .user_form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .fonts-variables;
+
+    header {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .user_card {
+        width: 100%;
+    }
+
+    .user_form {
+        width: 100%;
+    }
+}
